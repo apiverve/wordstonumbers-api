@@ -1,9 +1,13 @@
-# Words to Numbers API
+# [Words to Numbers API](https://apiverve.com/marketplace/wordstonumbers?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
 
-> Words to Numbers is a simple tool for converting words to numbers. It returns the words in numbers.
+Words to Numbers is a simple tool for converting words to numbers. It returns the words in numbers.
+
+The Words to Numbers API provides a simple, reliable way to integrate words to numbers functionality into your applications. Built for developers who need production-ready words to numbers capabilities without the complexity of building from scratch.
+
+**[View API Details →](https://apiverve.com/marketplace/wordstonumbers?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/wordstonumbers?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -11,6 +15,7 @@
 [![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/wordstonumbers)
 [![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.WordstoNumbers)
 [![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-wordstonumbers/)
+[![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](#-go)
 [![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
 
 ---
@@ -22,11 +27,7 @@
 ```javascript
 async function callWordstoNumbersAPI() {
     try {
-        const params = new URLSearchParams({
-            words: 'seven thousand six hundred and twenty'
-        });
-
-        const response = await fetch(`https://api.apiverve.com/v1/wordstonumbers?${params}`, {
+        const response = await fetch('https://api.apiverve.com/v1/wordstonumbers', {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -100,30 +101,45 @@ implementation 'com.github.apiverve:wordstonumbers-api:1.0.0'
 
 ---
 
-## Features
+### 🐹 Go
 
-✅ **Multi-platform support** - Use the same API across Node.js, .NET, Python, Android, and browsers
-✅ **Simple authentication** - Just add your API key in the request header
-✅ **Comprehensive documentation** - Full examples and API reference available
-✅ **Production-ready** - Used by developers worldwide
+```bash
+go get github.com/apiverve/wordstonumbers-api/go
+```
+
+[**Package Code →**](./go/)
+
+---
+
+## Why Use This API?
+
+| Feature | Benefit |
+|---------|---------|
+| **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
+| **Simple Integration** | Single API key authentication, consistent response format |
+| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
 
 ## Documentation
 
-📚 **Full API Documentation:** [https://docs.apiverve.com/ref/wordstonumbers](https://docs.apiverve.com/ref/wordstonumbers)
+- 🏠 **API Home:** [Words to Numbers API](https://apiverve.com/marketplace/wordstonumbers?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 📚 **API Reference:** [docs.apiverve.com/ref/wordstonumbers](https://docs.apiverve.com/ref/wordstonumbers)
+- 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
+- 💡 **Examples:** [examples/](./examples/)
 
 ---
 
-## Use Cases
+## What Can You Build?
 
-Common use cases for the Words to Numbers API:
+The Words to Numbers API is commonly used for:
 
-- ✅ Integration into web applications
-- ✅ Mobile app development
-- ✅ Data analysis and reporting
-- ✅ Automation workflows
-- ✅ Microservices architecture
+- **Web Applications** - Add words to numbers features to your frontend or backend
+- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Automation** - Integrate with n8n, Zapier, or custom workflows
+- **SaaS Products** - Enhance your product with words to numbers capabilities
+- **Data Pipelines** - Process and analyze data at scale
 
 ---
 
@@ -150,6 +166,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
+- 🏠 **API Home**: [Words to Numbers API](https://apiverve.com/marketplace/wordstonumbers?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
@@ -179,4 +196,4 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 Built with ❤️ by [APIVerve](https://apiverve.com)
 
-Copyright © 2025 APIVerve. All rights reserved.
+Copyright © 2026 APIVerve. All rights reserved.
