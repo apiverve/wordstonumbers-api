@@ -1,32 +1,34 @@
 openapi: 3.0.4
 info:
   title: Words to Numbers
-  description: Words to Numbers is a simple tool for converting words to numbers. It returns the words in numbers.
+  description: >-
+    Words to Numbers is a simple tool for converting words to numbers. It
+    returns the words in numbers.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/wordstonumbers:
     get:
       summary: Convert Words
-      description: Words to Numbers is a simple tool for converting words to numbers. It returns the words in numbers.
+      description: Convert words to numbers, including each word and the orginal equivalent
       operationId: wordstonumbers
       parameters:
-      - name: words
-        in: query
-        schema:
-          type: string
-        required: false
-        description: The words to convert to numbers
-        example: seven thousand six hundred and twenty
+        - name: words
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The words to convert to numbers
+          example: seven thousand six hundred and twenty
       responses:
         '200':
           description: Successful Response
@@ -42,11 +44,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   number: '7620'
                   words: seven thousand, six hundred twenty
@@ -54,16 +56,16 @@ paths:
                   numberOfDigits_numeric: 4
                   numberOfDigits_words: four
                   eachNumber:
-                  - seven
-                  - six
-                  - two
-                  - zero
+                    - seven
+                    - six
+                    - two
+                    - zero
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -71,4 +73,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
