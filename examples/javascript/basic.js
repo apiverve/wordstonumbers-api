@@ -13,12 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/wordstonumbers';
  */
 async function callWordstoNumbersAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            words: &#x27;seven thousand six hundred and twenty&#x27;
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
