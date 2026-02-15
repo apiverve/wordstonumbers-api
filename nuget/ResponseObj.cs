@@ -30,7 +30,6 @@ namespace APIVerve.API.WordstoNumbers
     public partial class Data
     {
         [JsonProperty("number")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Number { get; set; }
 
         [JsonProperty("words")]
