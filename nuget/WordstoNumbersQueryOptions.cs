@@ -12,7 +12,6 @@ namespace APIVerve.API.WordstoNumbers
     {
         /// <summary>
         /// The words to convert to numbers
-        /// Example: seven thousand six hundred and twenty
         /// </summary>
         [JsonProperty("words")]
         public string Words { get; set; }
