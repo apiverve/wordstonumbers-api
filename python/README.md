@@ -226,8 +226,9 @@ from apiverve_wordstonumbers.apiClient import WordstonumbersAPIClient
 
 api = WordstonumbersAPIClient("[YOUR_API_KEY]")
 
+query = { "words": "seven thousand six hundred and twenty" }
+
 try:
-    query = { "words": "seven thousand six hundred and twenty" }
     result = api.execute(query)
     print(result)
 finally:
