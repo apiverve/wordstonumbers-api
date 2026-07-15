@@ -17,11 +17,14 @@ def call_wordstonumbers_api():
     Make a GET request to the Words to Numbers API
     """
     try:
+        # Query parameters
+        params &#x3D; {&#x27;words&#x27;: &#x27;seven thousand six hundred and twenty&#x27;}
+
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.get(API_URL, headers=headers, params=params)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
