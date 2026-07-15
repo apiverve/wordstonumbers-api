@@ -30,7 +30,7 @@ class wordstonumbersWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/wordstonumbers';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"words":{"type":"string","required":false}};
+        this.validationRules = {"words":{"type":"string","required":true}};
     }
 
     /**
