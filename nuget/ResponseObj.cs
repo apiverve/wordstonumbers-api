@@ -25,12 +25,15 @@ namespace APIVerve.API.WordstoNumbers
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("number")]
-        public long Number { get; set; }
+        public long? Number { get; set; }
 
         [JsonProperty("words")]
         public string Words { get; set; }
@@ -39,12 +42,24 @@ namespace APIVerve.API.WordstoNumbers
         public string Ordinal { get; set; }
 
         [JsonProperty("numberOfDigits_numeric")]
-        public long NumberOfDigitsNumeric { get; set; }
+        public long? NumberOfDigitsNumeric { get; set; }
 
         [JsonProperty("numberOfDigits_words")]
         public string NumberOfDigitsWords { get; set; }
 
         [JsonProperty("eachNumber")]
         public string[] EachNumber { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
