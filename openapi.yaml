@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Words to Numbers
   description: >-
-    Words to Numbers is a simple tool for converting words to numbers. It
-    returns the words in numbers.
+    Words to Numbers converts spelled-out number phrases into numeric digits.
+    Pass written words to receive the calculated number, formatted English
+    notation, and total digit counts.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/wordstonumbers:
     get:
-      summary: Convert Words
+      summary: Words to Numbers
       description: Convert words to numbers, including each word and the orginal equivalent
       operationId: wordstonumbers
       parameters:
