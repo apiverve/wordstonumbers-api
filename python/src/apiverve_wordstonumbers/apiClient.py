@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -24,7 +24,7 @@ class ValidationError(WordstonumbersAPIClientError):
 class WordstonumbersAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "words": {"type": "string", "required": False}
+        "words": {"type": "string", "required": True}
     }
 
     # Format validation patterns
