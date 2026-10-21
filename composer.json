@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/wordstonumbers",
+    "description": "Words to Numbers converts spelled-out number phrases into numeric digits. Pass written words to receive the calculated number, formatted English notation, and total digit counts.",
+    "version": "1.2.2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "wordstonumbers",
+        "words to numbers api",
+        "convert words to numbers",
+        "spelled out numbers to digits",
+        "text to number conversion",
+        "written numbers to digits"
+    ],
+    "homepage": "https://apiverve.com/marketplace/wordstonumbers?utm_source=php&utm_medium=referral&utm_content=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/wordstonumbers",
+        "source": "https://github.com/apiverve/wordstonumbers-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Wordstonumbers\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Wordstonumbers\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
