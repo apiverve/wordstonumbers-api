@@ -4,6 +4,6 @@ require_relative "apiverve_wordstonumbers/client"
 
 module APIVerve
   module Wordstonumbers
-    VERSION = "1.2.4"
+    VERSION = "1.2.5"
   end
 end
